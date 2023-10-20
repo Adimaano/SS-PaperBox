@@ -41,7 +41,6 @@ public class StageControlTimeLv2 : MonoBehaviour
                     plate.transform.position = plateOriginalPos;
                     break;
                 case 1:
-                    Debug.Log("Part 1");
                     if(plate.transform.position.z<plateEndPos.z)
                     {
                         plate.transform.Translate(Vector3.forward * 10.0f * Time.deltaTime);
@@ -52,10 +51,8 @@ public class StageControlTimeLv2 : MonoBehaviour
                     }
                     break;
                 case 2:
-                    Debug.Log("Part 2");
                     break;
                 case 3:
-                    Debug.Log("Part 3");
                     if(plate.transform.position.z>plateOriginalPos.z)
                     {
                         plate.transform.Translate(Vector3.back * 5.0f * Time.deltaTime);
